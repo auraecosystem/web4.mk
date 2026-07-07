@@ -1,5 +1,12 @@
 
-set up and run the web4.mk polyglot automation framework from the auraecosystem/web4.mk GitHub repository, follow these structured steps:
+set up and run the web4.mk polyglot automation framework from the 
+
+[[auraecosystem/web4.mk ]]
+GitHub repository, follow these structured 
+
+
+
+steps:
 
 ## Prerequisites
 Ensure your local environment has the required engines installed:
@@ -50,15 +57,12 @@ Your application matrix will start running locally at http://localhost:8080.
 * If you need help troubleshooting a specific GNU Make or Zig compilation error?
 * Your host Operating System (Linux, macOS, or Windows WSL)?
 
-
-
-
-web4.mk/
+[[web4.mk]]
 ├── README.md
 ├── LICENSE
 ├── Makefile
 ├── pyproject.toml
-├── mk/
+├── [[mk/]]
 │   ├── build.mk
 │   ├── test.mk
 │   ├── lint.mk
@@ -74,7 +78,7 @@ web4.mk/
 │   ├── rust.mk
 │   ├── java.mk
 │   └── ...
-├── templates/
+├── [[templates/]]
 │   ├── python/
 │   │   ├── script.py.mako
 │   │   ├── cli.py.mako
@@ -82,13 +86,13 @@ web4.mk/
 │   │   ├── flask.py.mako
 │   │   ├── pyproject.toml.mako
 │   │   └── README.md.mako
-│   ├── node/
+│   ├── [[node/]]
 │   ├── go/
 │   ├── rust/
 │   ├── java/
 │   ├── cpp/
 │   └── web/
-├── cli/
+├── [[cli/]]
 │   ├── __init__.py
 │   ├── main.py
 │   ├── install.py
@@ -96,17 +100,17 @@ web4.mk/
 │   ├── generate.py
 │   ├── update.py
 │   └── doctor.py
-├── registry/
+├── [[registry/]]
 │   ├── index.json
 │   ├── modules.json
 │   └── templates.json
-├── examples/
+├── [[examples/]]
 ├── docs/
 ├── tests/
 └── .github/
     └── workflows/
 
-my-api/
+[[api/]]
 ├── app/
 ├── tests/
 ├── Dockerfile
@@ -119,9 +123,9 @@ my-api/
 └── .github/workflows/ci.yml
 
 
-Phase 1 — Foundation
+[[Foundation]]
 
-mk/
+[[web.Mk/]]
 ├── README.md
 ├── LICENSE
 ├── Makefile
@@ -140,9 +144,9 @@ mk/
 ├── tests/
 └── .github/
 
-Phase 2 — Template Library
+[[Template]] Library
 
-templates/
+## templates
 ├── python/
 ├── node/
 ├── go/
@@ -155,29 +159,27 @@ templates/
 ├── terraform/
 └── github/
 
-Phase 3 — CLI
+# CLI
 
-cli/
-├── main.py
-├── generate.py
-├── install.py
-├── update.py
-├── search.py
-├── registry.py
-├── doctor.py
-├── validate.py
-└── publish.py
+[[cli/]]
+├── * main.py
+├── * generate.py
+├── * install.py
+├── * update.py
+├── * search.py
+├── * registry.py
+├── * doctor.py
+├── * validate.py
+└── * publish.py
 
-Phase 4 — Registry
+[[Registry]]
+#
+├── * modules.json
+├── * templates.json
+├── * versions.json
+└── * index.json
 
-registry/
-├── modules.json
-├── templates.json
-├── versions.json
-└── index.json
-
-Example index.json:
-
+ [[```index.json:]]
 {
   "modules": [
     "python",
@@ -195,43 +197,37 @@ Example index.json:
   ]
 }
 
-Phase 5 — Commands
 
-mk new fastapi my-api
-mk new flask my-app
-mk new node blog
-mk install docker
-mk install postgres
-mk search ai
-mk list
-mk doctor
-mk validate
-mk publish
-mk upgrade
+[[ Commands]]
+* mk new fastapi my-api
+* mk new flask my-app
+* mk new node blog
+* mk install docker
+* mk install postgres
+* mk search ai
+* mk list
+* mk doctor
+* mk validate
+* mk publish
+* mk upgrade
+* mk add template
+* mk add module
+* mk add plugin
+* mk login
+[mk add template mk publish]
 
-Phase 6 — Community
-
-mk add template
-mk add module
-mk add plugin
-mk login
-mk publish
-
-Long-term Vision
-
-The project could evolve into a complete developer platform:
-
-* 📦 Module registry
-* 📄 Mako template registry
-* ⚙️ Build automation
-* 🚀 CI/CD templates
-* ☁️ Cloud deployment templates
-* 🤖 AI project templates
-* ⛓️ Blockchain templates
-* 🐳 Docker/Kubernetes support
-* 🔌 Plugin system
-* 🧩 Extension marketplace
-* 🌐 Documentation website
+[[Phase 6 — Community]]
+* 📦 [[Module registry]]
+* 📄 [[Mako template registry]]
+* ⚙️ [[Build automation]]
+* 🚀 [[CI/CD templates]]
+* ☁️ [[Cloud deployment templates]]
+* 🤖 [[AI project templates]]
+* ⛓️ [[Blockchain templates]]
+* 🐳 [[Docker/Kubernetes support]]
+* 🔌 [[Plugin system]]
+* 🧩 [[Extension marketplace]]
+* 🌐 [[Documentation website]]
 
 
 
