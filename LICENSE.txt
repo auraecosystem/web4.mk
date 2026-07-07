@@ -1,0 +1,8 @@
+name=LICENSE
+MIT License
+
+Copyright (c) 2026 auraecosystem
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+...
+(standard MIT text — paste the canonical MIT license body here)
