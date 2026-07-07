@@ -1,0 +1,64 @@
+mk/
+├── README.md
+├── LICENSE
+├── Makefile
+├── pyproject.toml
+├── mk/
+│   ├── build.mk
+│   ├── test.mk
+│   ├── lint.mk
+│   ├── docs.mk
+│   ├── docker.mk
+│   ├── kubernetes.mk
+│   ├── release.mk
+│   ├── security.mk
+│   ├── clean.mk
+│   ├── python.mk
+│   ├── node.mk
+│   ├── go.mk
+│   ├── rust.mk
+│   ├── java.mk
+│   └── ...
+├── templates/
+│   ├── python/
+│   │   ├── script.py.mako
+│   │   ├── cli.py.mako
+│   │   ├── fastapi.py.mako
+│   │   ├── flask.py.mako
+│   │   ├── pyproject.toml.mako
+│   │   └── README.md.mako
+│   ├── node/
+│   ├── go/
+│   ├── rust/
+│   ├── java/
+│   ├── cpp/
+│   └── web/
+├── cli/
+│   ├── __init__.py
+│   ├── main.py
+│   ├── install.py
+│   ├── search.py
+│   ├── generate.py
+│   ├── update.py
+│   └── doctor.py
+├── registry/
+│   ├── index.json
+│   ├── modules.json
+│   └── templates.json
+├── examples/
+├── docs/
+├── tests/
+└── .github/
+    └── workflows/
+
+my-api/
+├── app/
+├── tests/
+├── Dockerfile
+├── docker-compose.yml
+├── Makefile
+├── pyproject.toml
+├── README.md
+├── .gitignore
+├── .env.example
+└── .github/workflows/ci.yml
