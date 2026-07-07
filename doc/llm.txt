@@ -62,3 +62,121 @@ my-api/
 ├── .gitignore
 ├── .env.example
 └── .github/workflows/ci.yml
+
+
+Phase 1 — Foundation
+
+mk/
+├── README.md
+├── LICENSE
+├── Makefile
+├── pyproject.toml
+├── mk/
+│   ├── build.mk
+│   ├── clean.mk
+│   ├── test.mk
+│   ├── docs.mk
+│   └── release.mk
+├── templates/
+├── cli/
+├── registry/
+├── examples/
+├── docs/
+├── tests/
+└── .github/
+
+Phase 2 — Template Library
+
+templates/
+├── python/
+├── node/
+├── go/
+├── rust/
+├── java/
+├── cpp/
+├── web/
+├── docker/
+├── kubernetes/
+├── terraform/
+└── github/
+
+Phase 3 — CLI
+
+cli/
+├── main.py
+├── generate.py
+├── install.py
+├── update.py
+├── search.py
+├── registry.py
+├── doctor.py
+├── validate.py
+└── publish.py
+
+Phase 4 — Registry
+
+registry/
+├── modules.json
+├── templates.json
+├── versions.json
+└── index.json
+
+Example index.json:
+
+{
+  "modules": [
+    "python",
+    "docker",
+    "github",
+    "rust",
+    "go"
+  ],
+  "templates": [
+    "fastapi",
+    "flask",
+    "node-api",
+    "cli",
+    "library"
+  ]
+}
+
+Phase 5 — Commands
+
+mk new fastapi my-api
+mk new flask my-app
+mk new node blog
+mk install docker
+mk install postgres
+mk search ai
+mk list
+mk doctor
+mk validate
+mk publish
+mk upgrade
+
+Phase 6 — Community
+
+mk add template
+mk add module
+mk add plugin
+mk login
+mk publish
+
+Long-term Vision
+
+The project could evolve into a complete developer platform:
+
+* 📦 Module registry
+* 📄 Mako template registry
+* ⚙️ Build automation
+* 🚀 CI/CD templates
+* ☁️ Cloud deployment templates
+* 🤖 AI project templates
+* ⛓️ Blockchain templates
+* 🐳 Docker/Kubernetes support
+* 🔌 Plugin system
+* 🧩 Extension marketplace
+* 🌐 Documentation website
+
+
+
