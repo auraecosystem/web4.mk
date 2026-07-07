@@ -1,4 +1,59 @@
-mk/
+
+set up and run the web4.mk polyglot automation framework from the auraecosystem/web4.mk GitHub repository, follow these structured steps:
+
+## Prerequisites
+Ensure your local environment has the required engines installed:
+
+* GNU Make (≥ 3.81)u
+* Python (≥ 3.10)
+* Zig Compiler (≥ 0.11.0, optional but recommended for low-level builds)
+
+------------------------------
+## Step 1: Clone the Repository
+Open your terminal and clone the repository matrix:
+
+git clone https://github.com/auraecosystem/web4.mk.git
+cd web4.mk
+
+## Step 2: Initialize the Workspace
+Bootstrap your local environmental variable files and required directory architecture:
+
+make -f web4.mk init
+
+This command auto-generates directories like cli, modules, registry, and your .env configuration file.
+## Step 3: Install Dependencies
+Resolve your core ecosystem packages and AI agent hooks declared in package.mk.json:
+
+make -f web4.mk install
+
+## Step 4: Build and Compile
+Compile native Zig binaries, optimization assets, and build dependencies:
+
+make -f web4.mk build
+
+## Step 5: Start the Local Runtime Sandbox
+Launch the Web4 local sandbox instance and run the marketplace marketplace interface:
+
+make -f web4.mk up
+
+Your application matrix will start running locally at http://localhost:8080.
+------------------------------
+## Useful Management Commands
+
+* Run Tests: Execute functional validation pipelines using make -f web4.mk test.
+* Sync Workspace: Pull updates across local module blocks using make -f web4.mk sync.
+* Clean Artifacts: Purge temporary caches and build items using make -f web4.mk clean.
+
+
+
+* What specific AI agent dependencies or modules you plan to link?
+* If you need help troubleshooting a specific GNU Make or Zig compilation error?
+* Your host Operating System (Linux, macOS, or Windows WSL)?
+
+
+
+
+web4.mk/
 ├── README.md
 ├── LICENSE
 ├── Makefile
