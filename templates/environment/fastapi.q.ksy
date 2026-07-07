@@ -1,21 +1,2 @@
 fastapi.mk.nano
-NAME = ${PROJECT_NAME}
-PYTHON = python3
 
-install:
-	pip install -r requirements.txt
-
-run:
-	uvicorn app.main:app --reload
-
-test:
-	pytest
-
-lint:
-	ruff check .
-
-format:
-	ruff format .
-
-build:
-	docker build -t $(NAME) .
