@@ -1,0 +1,32 @@
+{
+  "$schema": "https://mk.dev/schema/v1",
+  "name": "web4-api",
+  "version": "1.0.0",
+  "description": "Production-ready Web4 API",
+  "author": "Seriki Yakub",
+  "license": "Apache-2.0",
+  "language": "python",
+
+  "modules": [
+    "python",
+    "docker",
+    "github",
+    "docs"
+  ],
+
+  "templates": [
+    "fastapi"
+  ],
+
+  "dependencies": {
+    "python": ">=3.13"
+  },
+
+  "scripts": {
+    "build": "mk build",
+    "test": "mk test",
+    "lint": "mk lint",
+    "release": "mk release",
+    "deploy": "mk deploy"
+  }
+}
