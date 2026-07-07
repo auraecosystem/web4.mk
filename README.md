@@ -1,12 +1,10 @@
 # web4.mk 🚀
 
 > [llms.txt](llms-full.txt) 
-
 > [![License: MIT](https://shields.io)](https://opensource.org)
  [![Make](https://shields.io>=3.81-blue.svg)](https://gnu.org)
   [![Python](https://shields.io>=3.10-blue.svg)](https://python.org)
   [![Zig](https://shields.io>=0.11.0-orange.svg)](https://ziglang.org)
-
 >
 >  [`llms.txt`](examples/docs/llms.wiki)
 
