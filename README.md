@@ -1,26 +1,29 @@
 # web4.mk 🚀
 
+> [llms.txt](llms-full.txt)
+
 [![License: MIT](https://shields.io)](https://opensource.org)
  [![Make](https://shields.io>=3.81-blue.svg)](https://gnu.org)
   [![Python](https://shields.io>=3.10-blue.svg)](https://python.org)
   [![Zig](https://shields.io>=0.11.0-orange.svg)](https://ziglang.org)
 
-> https://llms.txt
-> 
-An ultra-lightweight, polyglot automation matrix and decentralized module orchestrator designed for **Web4 ecosystems**.
+> [`llms.txt`](examples/docs/llms.wiki)
+
+ An ultra-lightweight, polyglot automation matrix and decentralized module orchestrator designed for **Web4 ecosystems**.
 
 ---
 
 ## 🛠️ Prerequisites
+
 * **GNU Make** (`>=3.81`)
 * **Python** (`>=3.10`)
-* **Zig Compiler** (`>=0.11.0`, optional)
+* **Zig Compiler** (`>=0.11.0`,optional)
 
 ---
 
 ## 🚀 Quick Start
 ```bash
-git clone https://github.com
+git clone https://github.com/auraecosystem/web4.mk.git
 cd web4.mk
 make -f web4.mk init
 make -f web4.mk build
