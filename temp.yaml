@@ -1,0 +1,14 @@
+name: fastapi
+language: python
+version: 1.0.0
+description: Production-ready FastAPI project
+
+variables:
+  project_name:
+    type: string
+  author:
+    type: string
+  license:
+    type: string
+  python_version:
+    default: "3.13"
