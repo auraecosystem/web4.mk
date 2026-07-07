@@ -1,4 +1,4 @@
-0query Models" {
+query Models {
 
     from ai.models
 
@@ -8,8 +8,9 @@
 
         version,
 
-        provider
+        provider,
 
-    };
+
+    }
 
 }
