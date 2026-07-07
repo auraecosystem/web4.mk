@@ -48,3 +48,17 @@ clean: ## Purge local build targets, compiled artifacts and objects
 	@echo "[*] Clearing workspace environment targets..."
 	@find . -type d -name "__pycache__" -exec rm -rf {} +
 	@echo "[+] Clean completed."
+
+# Append this inside your existing web4.mk file to handle Zig compilation
+ZIG_SRC       := modules/math_utils.zig
+ZIG_OUT       := modules/math_utils.o
+
+build-native: ## Compile native memory-safe Zig performance objects
+	@echo "[*] Checking system compilers..."
+	@if command -v zig >/dev/null 2>&1; then \
+		echo "[*] Compiling $(ZIG_SRC) into shared native artifact..."; \
+		zig build-obj $(ZIG_SRC) -femit-bin=$(ZIG_OUT) --name math_utils; \
+		print "[+] Native binary optimized successfully at $(ZIG_OUT)."; \
+	else \
+		echo "[!] Zig optimization compiler was not found. Skipping native pass."; \
+	fi
