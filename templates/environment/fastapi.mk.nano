@@ -1,20 +1,12 @@
-NAME = ${PROJECT_NAME}
-PYTHON = python3
+project:
+  name: FastAPI
+  language: python
+  framework: fastapi
 
-install:
-	pip install -r requirements.txt
+environment:
+  python: "3.13"
 
-run:
-	uvicorn app.main:app --reload
-
-test:
-	pytest
-
-lint:
-	ruff check .
-
-format:
-	ruff format .
-
-build:
-	docker build -t $(NAME) .
+commands:
+  run: uvicorn app.main:app --reload
+  test: pytest
+  lint: ruff check .
