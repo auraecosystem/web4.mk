@@ -1,17 +1,15 @@
-query Models {
+0query Models" {
 
     from ai.models
 
     select {
 
-        name,
+        name, 
 
         version,
 
         provider
 
-    }
+    };
 
-};
-
-
+}
